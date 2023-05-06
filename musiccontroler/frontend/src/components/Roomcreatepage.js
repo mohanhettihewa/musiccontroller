@@ -5,7 +5,7 @@ import Typography from "@material-ui/core/Typography";
 import Textfield from "@material-ui/core/TextField";
 import FormHelperText from "@material-ui/core/FormHelperText";
 import FormControl from "@material-ui/core/FormControl";
-import {link} from "react-router-dom";
+import {Link, link} from "react-router-dom";
 import Radio from "@material-ui/core/Radio";
 import RadioGroup from "@material-ui/core/RadioGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
@@ -78,7 +78,19 @@ export default class Roomcreatepage extends Component{
 
 
                     </Grid>
-                    </Grid>
+
+<Grid item xs={12} align="center">
+    <Button color="primary" variant="contained">
+        Create a Room
+    </Button>
+    </Grid>
+    <Grid item xs={12} align="center">
+    <Button color="secondary" variant="contained" to="/" component={Link}>
+        Back
+    </Button>
+    </Grid>
+
+             </Grid>       
         );
                     
                     
